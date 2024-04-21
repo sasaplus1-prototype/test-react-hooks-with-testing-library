@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^15.0.2",
+    "@vitest/browser": "^1.5.0",
+    "playwright": "^1.43.1",
+    "vitest": "^1.5.0"
+  },
+  "private": true,
+  "scripts": {
+    "prepare": "npx playwright install chromium",
+    "test": "vitest --browser.headless --browser.provider=playwright --browser.name=chromium"
+  }
+}
